@@ -1,6 +1,6 @@
 default_run_options[:pty] = true
 set :application, "nalsoft"
-set :repository,  "svn+ssh://git@github.com/nallan/nalsoft"
+set :repository,  "ssh://git@github.com/nallan/nalsoft"
 
 set :scm, :git
 # set :scm, :git # You can set :scm explicitly or Capistrano will make an intelligent guess based on known version control directory names
