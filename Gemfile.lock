@@ -112,7 +112,7 @@ DEPENDENCIES
   jbuilder (~> 1.0.1)
   jquery-rails
   pg
-  rails (= 4.0.0.beta1)
+  rails
   sass-rails (~> 4.0.0.beta1)
   turbolinks
   uglifier (>= 1.0.3)
