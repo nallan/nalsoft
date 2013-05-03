@@ -22,3 +22,6 @@ doc/
 .project
 .DS_Store
 .idea
+
+# Ignore database.yml
+/config/database.yml
