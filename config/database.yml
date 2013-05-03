@@ -17,7 +17,6 @@ development:
   encoding: unicode
   database: nalsoft_development
   username: nallan
-  password: Hydrog3n^20xygeN
   host: localhost
   port: 5432
 
@@ -44,14 +43,5 @@ test:
   encoding: unicode
   database: nalsoft_test
   username: nallan
-  password: Hydrog3n^20xygeN
   host: localhost
   port: 5432
-
-production:
-  adapter: postgresql
-  encoding: unicode
-  database: nalsoft_production
-  pool: 5
-  username: nalsoft
-  password:
