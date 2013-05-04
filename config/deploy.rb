@@ -13,14 +13,13 @@ set :deploy_to, "/var/www"
 server "198.199.107.176", :app, :web, :db, :primary => true
 
 before "deploy:assets:precompile" do
-  run ["ln -nfs #{shared_path}/config/database.yml #{release_path}/config/database.yml"
-      ].join(" && ")
+  run ["ln -nfs #{shared_path}/config/database.yml #{release_path}/config/database.yml"].join(" && ")
 end
 
 # if you want to clean up old releases on each deploy uncomment this:
 # after "deploy:restart", "deploy:cleanup"
-set :keep_releases, 5
-after "deploy:restart", "deploy:cleanup"
+#set :keep_releases, 5
+#after "deploy:restart", "deploy:cleanup"
 after 'deploy:update_code', 'deploy:migrate'
 
 
