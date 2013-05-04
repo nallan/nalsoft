@@ -5,7 +5,7 @@ gem 'rails', '3.2.13'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-gem 'pg', '~> 0.10.1'
+gem 'pg', '~> 0.15.1'
 gem 'therubyracer'
 
 # Gems used only for assets and not required
@@ -22,6 +22,7 @@ end
 
 gem 'jquery-rails'
 
+gem 'unicorn'
 gem 'capistrano'
 
 # To use ActiveModel has_secure_password
