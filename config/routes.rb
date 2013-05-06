@@ -1,4 +1,7 @@
 Nalsoft::Application.routes.draw do
+  resources :users
+
+
   resources :temps
 
 
