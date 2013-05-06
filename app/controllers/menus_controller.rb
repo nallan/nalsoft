@@ -1,4 +1,6 @@
 class MenusController < ApplicationController
+  before_filter :require_login
+
   # GET /menus
   # GET /menus.json
   def index
