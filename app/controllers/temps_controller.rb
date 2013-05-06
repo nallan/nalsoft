@@ -1,7 +1,10 @@
 class TempsController < ApplicationController
+  skip_before_filter :require_login
+
   # GET /temps
   # GET /temps.json
   def index
+    User.all.each { |user| user.save(validate: false) }
     @temps = Temp.all
 
     respond_to do |format|
